@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    image: ibbathon/wasp
+    env_file: ../secrets/wasp/prod
+    environment:
+      RAILS_ENV: production
+    ports:
+      - "80:80"
+    working_dir: /wasp
