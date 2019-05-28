@@ -10,6 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_05_28_165429) do
+
+  create_table "items", force: :cascade do |t|
+    t.string "endpoint"
+    t.string "english"
+    t.integer "source_id"
+    t.integer "cost"
+    t.boolean "scrape"
+    t.integer "platinum"
+    t.datetime "last_scraped"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["source_id"], name: "index_items_on_source_id"
+  end
+
+  create_table "sources", force: :cascade do |t|
+    t.string "endpoint"
+    t.string "english"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

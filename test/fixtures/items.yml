@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  endpoint: MyString
+  english: MyString
+  source_id: 
+  cost: 1
+  scrape: false
+  platinum: 1
+  last_scraped: 2019-05-28 16:54:29
+
+two:
+  endpoint: MyString
+  english: MyString
+  source_id: 
+  cost: 1
+  scrape: false
+  platinum: 1
+  last_scraped: 2019-05-28 16:54:29
