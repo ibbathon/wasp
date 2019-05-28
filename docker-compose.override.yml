@@ -6,6 +6,10 @@ services:
     volumes:
       - .:/wasp
     working_dir: /wasp
+    environment:
+      RAILS_ENV: development
     ports:
       - "3000:3000"
-    command: bundle exec rails server -p 3000 -b '0.0.0.0'
+    command: bash -c "bundle exec rails server -p 3000 -b '0.0.0.0'"
+    # Use the following to test cron jobs
+    # command: bash -c "cron && bundle exec rails server -p 3000 -b '0.0.0.0'"
