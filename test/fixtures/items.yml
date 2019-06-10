@@ -3,7 +3,7 @@
 one:
   endpoint: MyString
   english: MyString
-  source_id: 
+  source: 
   cost: 1
   scrape: false
   platinum: 1
@@ -12,7 +12,7 @@ one:
 two:
   endpoint: MyString
   english: MyString
-  source_id: 
+  source: 
   cost: 1
   scrape: false
   platinum: 1

@@ -56,16 +56,7 @@ group :test do
   gem 'selenium-webdriver'
   # Use webdrivers instead of chromedriver-helper, as that has a bug
   gem 'webdrivers'
-
-  # WaSP-specific
-  # For testing my whenever tasks.
-  gem 'whenever-test'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-
-# WaSP-specific
-# For scheduling the scraper.
-gem 'whenever', require: false
