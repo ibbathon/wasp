@@ -1,7 +1,9 @@
 class Item < ApplicationRecord
   belongs_to :source, optional: true
   validates :endpoint, presence: true
+  validates_uniqueness_of :endpoint
   validates :english, presence: true
+  validates_uniqueness_of :english
   before_save :default_values
 
   def default_values

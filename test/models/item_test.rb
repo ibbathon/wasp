@@ -62,4 +62,18 @@ class ItemTest < ActiveSupport::TestCase
   test 'next_data_scrape defaults to 0' do
     remove_field_and_test_default :next_data_scrape, DateTime.new(0)
   end
+
+  test 'endpoint must be unique' do
+    Item.create!({endpoint: 'test_data', english: 'test 1'})
+    assert_raises ActiveRecord::RecordInvalid do
+      Item.create!({endpoint: 'test_data', english: 'test 2'})
+    end
+  end
+
+  test 'english name must be unique' do
+    Item.create!({endpoint: 'test_data1', english: 'test'})
+    assert_raises ActiveRecord::RecordInvalid do
+      Item.create!({endpoint: 'test_data2', english: 'test'})
+    end
+  end
 end
