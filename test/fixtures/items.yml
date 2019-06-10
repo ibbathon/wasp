@@ -3,17 +3,17 @@
 one:
   endpoint: MyString
   english: MyString
-  source: 
+  source_id: 1
   cost: 1
-  scrape: false
   platinum: 1
-  last_scraped: 2019-05-28 16:54:29
+  next_price_scrape: 2019-05-28 16:54:29
+  next_data_scrape: 2019-05-28 16:54:29
 
 two:
   endpoint: MyString
   english: MyString
-  source: 
+  source_id: 2
   cost: 1
-  scrape: false
   platinum: 1
-  last_scraped: 2019-05-28 16:54:29
+  next_price_scrape: 2019-05-28 16:54:29
+  next_data_scrape: 2019-05-28 16:54:29

@@ -8,9 +8,9 @@ class ItemTest < ActiveSupport::TestCase
       english: 'Test Item',
       source: @source,
       cost: 1234,
-      scrape: true,
       platinum: 5678,
-      last_scraped: DateTime.new(2019,01,01,0,0,0),
+      next_price_scrape: DateTime.new(2019,01,01,0,0,0),
+      next_data_scrape: DateTime.new(2019,01,01,0,0,0),
     }
   end
 
@@ -30,6 +30,11 @@ class ItemTest < ActiveSupport::TestCase
     assert_equal default_value, item[field]
   end
 
+  def remove_field_and_test_null_default field
+    item = remove_field_and_return_item field
+    assert_nil item[field]
+  end
+
   test 'endpoint is required' do
     remove_field_and_test_invalid :endpoint
   end
@@ -38,23 +43,23 @@ class ItemTest < ActiveSupport::TestCase
     remove_field_and_test_invalid :english
   end
 
-  test 'source is required' do
-    remove_field_and_test_invalid :source
+  test 'source defaults to null' do
+    remove_field_and_test_null_default :source
   end
 
   test 'cost defaults to 0' do
     remove_field_and_test_default :cost, 0
   end
 
-  test 'scrape defaults to false' do
-    remove_field_and_test_default :scrape, false
-  end
-
   test 'platinum defaults to 0' do
     remove_field_and_test_default :platinum, 0
   end
 
-  test 'last_scraped defaults to ancient' do
-    remove_field_and_test_default :last_scraped, DateTime.new(0)
+  test 'next_price_scrape defaults to 0' do
+    remove_field_and_test_default :next_price_scrape, DateTime.new(0)
+  end
+
+  test 'next_data_scrape defaults to 0' do
+    remove_field_and_test_default :next_data_scrape, DateTime.new(0)
   end
 end
