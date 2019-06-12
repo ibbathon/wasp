@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  endpoint: MyString
-  english: MyString
+unused_source:
+  english: Red Veil
 
-two:
-  endpoint: MyString
-  english: MyString
+used_source_1:
+  english: Steel Meridian
+
+used_source_2:
+  english: Cephalon Suda
+
+used_source_3:
+  english: The Perrin Sequence

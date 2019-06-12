@@ -2,28 +2,15 @@ require 'test_helper'
 
 class SourceTest < ActiveSupport::TestCase
   setup do
-    @data = {
-      endpoint: 'test_source',
-      english: 'Test Source',
-    }
+    @source = Source.find_by(english: 'Cephalon Suda')
+    @dup_source = Source.find_by(english: 'Red Veil')
   end
 
-  def remove_field_and_return_item field
-    @data.delete(field)
-    return Source.create!(@data)
+  test 'english name is required' do
+    remove_field_and_test_invalid @source, :english
   end
 
-  def remove_field_and_test_invalid field
-    assert_raises ActiveRecord::RecordInvalid do
-      remove_field_and_return_item field
-    end
-  end
-
-  test 'endpoint is required' do
-    remove_field_and_test_invalid :endpoint
-  end
-
-  test 'english is required' do
-    remove_field_and_test_invalid :english
+  test 'english name must be unique' do
+    modify_field_and_test_uniqueness @source, @dup_source, :english
   end
 end

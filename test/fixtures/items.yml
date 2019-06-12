@@ -1,19 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  endpoint: MyString
-  english: MyString
-  source_id: 1
-  cost: 1
-  platinum: 1
-  next_price_scrape: 2019-05-28 16:54:29
+mod_no_price:
+  endpoint: sonic_fracture
+  english: Sonic Fracture
+  sources: used_source_2, used_source_3
+  cost: 25000
   next_data_scrape: 2019-05-28 16:54:29
 
-two:
-  endpoint: MyString
-  english: MyString
-  source_id: 2
-  cost: 1
-  platinum: 1
-  next_price_scrape: 2019-05-28 16:54:29
-  next_data_scrape: 2019-05-28 16:54:29
+mod_with_price:
+  endpoint: freeze_force
+  english: Freeze Force
+  sources: used_source_1, used_source_2
+  cost: 25000
+  platinum: 11
+  next_data_scrape: 2019-05-28 16:55:29
+  next_price_scrape: 2019-05-28 16:56:29
+
+unscraped_item:
+  endpoint: ember_prime_chassis
+  english: Ember Prime Chassis
