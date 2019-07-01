@@ -1,0 +1,29 @@
+{
+  "payload": {
+    "item": {
+      "id": "54a74454e779892d5e515652",
+      "items_in_set": [
+        {
+          "id": "54a74454e779892d5e515652",
+          "icon_format": "port",
+          "mod_max_rank": 3,
+          "url_name": "freeze_force",
+          "rarity": "rare",
+          "thumb": "icons/en/thumbs/Freeze_Force.76d7a06e084231ef174fdb02079b8389.128x128.png",
+          "trading_tax": 8000,
+          "en": {
+            "item_name": "Freeze Force",
+            "description": "<p>Freeze Force is a Warframe Augment Mod for Frost that allows Freeze to be cast on allies, temporarily granting them additional  Cold damage to all attacks.</p>",
+            "wiki_link": "http://warframe.wikia.com/wiki/Freeze_Force",
+            "drop": [
+              {"name": "Steel Meridian","link": null},
+              {"name": "Cephalon Suda","link": null}
+            ]
+          },
+          "icon": "icons/en/Freeze_Force.76d7a06e084231ef174fdb02079b8389.png",
+          "tags": ["mod","pve","rare"]
+        }
+      ]
+    }
+  }
+}

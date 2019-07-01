@@ -5,6 +5,8 @@ require 'minitest/autorun'
 require 'webmock/minitest'
 require 'minitest/logger'
 
+$list_job_running = false
+
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all

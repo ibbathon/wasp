@@ -1,0 +1,29 @@
+{
+  "payload": {
+    "item": {
+      "id": "5615432bb66f8371035bfa2a",
+      "items_in_set": [
+        {
+          "mod_max_rank": 3,
+          "rarity": "rare",
+          "id": "5615432bb66f8371035bfa2a",
+          "icon_format": "port",
+          "thumb": "icons/en/thumbs/Sonic_Fracture.42750ffc5b0a98753ad727b73c1ef3d6.128x128.png",
+          "tags": ["mod","pve","rare"],
+          "icon": "icons/en/Sonic_Fracture.42750ffc5b0a98753ad727b73c1ef3d6.png",
+          "trading_tax": 8000,
+          "en": {
+            "item_name": "Sonic Fracture",
+            "description": "<p>Sonic Fracture is a Warframe Augment Mod for Banshee's Sonic Boom that allows it to temporarily strip armor off enemies.</p>",
+            "wiki_link": "http://warframe.wikia.com/wiki/Sonic_Fracture",
+            "drop": [
+              {"name": "Cephalon Suda","link": null},
+              {"name": "The Perrin Sequence","link": null}
+            ]
+          },
+          "url_name": "sonic_fracture"
+        }
+      ]
+    }
+  }
+}

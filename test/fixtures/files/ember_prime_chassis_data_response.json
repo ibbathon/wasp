@@ -1,0 +1,109 @@
+{
+  "payload": {
+    "item": {
+      "id": "54a73e65e779893a797fff7e",
+      "items_in_set": [
+        {
+          "sub_icon": "sub_icons/systems_128x128.png",
+          "tags": ["parts","prime","systems","warframe"],
+          "thumb": "icons/en/thumbs/Ember_Prime_Set.971255acc3f1ad8a374d236c6af1c816.128x128.png",
+          "url_name": "ember_prime_systems",
+          "ducats": 45,
+          "trading_tax": 4000,
+          "icon_format": "port",
+          "id": "54a73e65e779893a797fff7a",
+          "en": {
+            "item_name": "Ember Prime Systems",
+            "description": "<p>Release Date: November 20th, 2013</p><p>Ember Prime is the primed variant of the Ember Warframe with more powerful stats; possessing higher shields and armor, as well as a  and  polarity. </p>",
+            "wiki_link": "http://warframe.wikia.com/wiki/Ember/Prime",
+            "drop": [
+              {"name": "Axi S2 Uncommon","link": null},
+              {"name": "Lith G1 Uncommon","link": null}
+            ]
+          },
+          "set_root": false,
+          "icon": "icons/en/Ember_Prime_Set.971255acc3f1ad8a374d236c6af1c816.png"
+        },
+        {
+          "sub_icon": "sub_icons/neuroptics_128x128.png",
+          "tags": ["blueprint","prime","neuroptics","warframe"],
+          "thumb": "icons/en/thumbs/Ember_Prime_Set.971255acc3f1ad8a374d236c6af1c816.128x128.png",
+          "url_name": "ember_prime_neuroptics",
+          "ducats": 15,
+          "icon_format": "port",
+          "id": "54a73e65e779893a797fff6d",
+          "en": {
+            "item_name": "Ember Prime Neuroptics",
+            "description": "<p>Release Date: November 20th, 2013</p><p>Ember Prime is the primed variant of the Ember Warframe with more powerful stats; possessing higher shields and armor, as well as a  and  polarity. </p>",
+            "wiki_link": "http://warframe.wikia.com/wiki/Ember/Prime",
+            "drop": [
+              {"name": "Meso F3 Uncommon","link": null},
+              {"name": "Neo S5 Uncommon","link": null}
+            ]
+          },
+          "set_root": false,
+          "icon": "icons/en/Ember_Prime_Set.971255acc3f1ad8a374d236c6af1c816.png"
+        },
+        {
+          "sub_icon": "sub_icons/chassis_128x128.png",
+          "tags": ["parts","prime","chassis","warframe"],
+          "thumb": "icons/en/thumbs/Ember_Prime_Set.971255acc3f1ad8a374d236c6af1c816.128x128.png",
+          "url_name": "ember_prime_chassis",
+          "ducats": 15,
+          "trading_tax": 4000,
+          "icon_format": "port",
+          "id": "54a73e65e779893a797fff7e",
+          "en": {
+            "item_name": "Ember Prime Chassis",
+            "description": "<p>Release Date: November 20th, 2013</p><p>Ember Prime is the primed variant of the Ember Warframe with more powerful stats; possessing higher shields and armor, as well as a  and  polarity. </p>",
+            "wiki_link": "http://warframe.wikia.com/wiki/Ember/Prime",
+            "drop": [
+              {"name": "Meso F2 Uncommon","link": null},
+              {"name": "Neo F1 Uncommon","link": null}
+            ]
+          },
+          "set_root": false,
+          "icon": "icons/en/Ember_Prime_Set.971255acc3f1ad8a374d236c6af1c816.png"
+        },
+        {
+          "sub_icon": "sub_icons/blueprint_128x128.png",
+          "tags": ["blueprint","prime","warframe"],
+          "thumb": "icons/en/thumbs/Ember_Prime_Set.971255acc3f1ad8a374d236c6af1c816.128x128.png",
+          "url_name": "ember_prime_blueprint",
+          "ducats": 100,
+          "trading_tax": 4000,
+          "icon_format": "port",
+          "id": "54a73e65e779893a797fff81",
+          "en": {
+            "item_name": "Ember Prime Blueprint",
+            "description": "<p>Release Date: November 20th, 2013</p><p>Ember Prime is the primed variant of the Ember Warframe with more powerful stats; possessing higher shields and armor, as well as a  and  polarity. </p>",
+            "wiki_link": "http://warframe.wikia.com/wiki/Ember/Prime",
+            "drop": [
+              {"name": "Axi E1 Rare","link": null},
+              {"name": "Meso E1 Rare","link": null},
+              {"name": "Neo E1 Rare","link": null}
+            ]
+          },
+          "set_root": false,
+          "icon": "icons/en/Ember_Prime_Set.971255acc3f1ad8a374d236c6af1c816.png"
+        },
+        {
+          "tags": ["set","prime","warframe"],
+          "thumb": "icons/en/thumbs/Ember_Prime_Set.971255acc3f1ad8a374d236c6af1c816.128x128.png",
+          "url_name": "ember_prime_set",
+          "trading_tax": 4000,
+          "icon_format": "port",
+          "id": "56783f24cbfa8f0432dd899a",
+          "en": {
+            "item_name": "Ember Prime Set",
+            "description": "<p>Release Date: November 20th, 2013</p><p>Ember Prime is the primed variant of the Ember Warframe with more powerful stats; possessing higher shields and armor, as well as a  and  polarity. </p>",
+            "wiki_link": "http://warframe.wikia.com/wiki/Ember/Prime",
+            "drop": []
+          },
+          "set_root": true,
+          "icon": "icons/en/Ember_Prime_Set.971255acc3f1ad8a374d236c6af1c816.png"
+        }
+      ]
+    }
+  }
+}

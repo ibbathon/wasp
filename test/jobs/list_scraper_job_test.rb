@@ -12,16 +12,7 @@ class ListScraperJobTest < ActiveJob::TestCase
     ]
 
     @endpoint = 'https://api.warframe.market/v1/items'
-    @response_body = '{
-        "payload": {
-          "items": {
-            "en": [
-              {"id": "54a73e65e779893a797fff6d", "url_name": "ember_prime_neuroptics", "item_name": "Ember Prime Neuroptics", "thumb": "sub_icons/neuroptics_128x128.png"},
-              {"id": "58446fc72c2ada0064aca003", "url_name": "icy_avalanche", "item_name": "Icy Avalanche", "thumb": "icons/en/thumbs/Icy_Avalanche.ee531a2d69a5c482eca8f264fbeaf103.128x128.png"}
-            ]
-          }
-        }
-      }'
+    @response_body = file_fixture('list_response.json').read
   end
 
   test 'calls warframe.market API /items endpoint' do

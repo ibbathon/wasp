@@ -20,5 +20,7 @@ module Wasp
     config.market_base_url = 'https://api.warframe.market/v1'
     # When to run the ListScraperJob (recurring)
     config.list_scraper_run_at = lambda { DateTime.tomorrow.beginning_of_day }
+    # How long to wait between DataScraperJob runs
+    config.data_scraper_wait_period = 2.seconds
   end
 end
