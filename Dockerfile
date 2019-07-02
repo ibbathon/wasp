@@ -1,5 +1,5 @@
 FROM ruby:2.6.3
-RUN apt-get update -qq && apt-get install -y --no-install-recommends nodejs cron
+RUN apt-get update -qq && apt-get install -y --no-install-recommends nodejs cron mysql-client
 WORKDIR /wasp
 COPY Gemfile Gemfile.lock ./
 RUN bundle install

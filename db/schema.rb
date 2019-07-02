@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_06_12_192820) do
 
-  create_table "items", force: :cascade do |t|
+  create_table "items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "endpoint"
     t.string "english"
     t.integer "cost"
@@ -23,13 +23,13 @@ ActiveRecord::Schema.define(version: 2019_06_12_192820) do
     t.datetime "next_data_scrape"
   end
 
-  create_table "items_sources", id: false, force: :cascade do |t|
-    t.integer "item_id", null: false
-    t.integer "source_id", null: false
+  create_table "items_sources", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "item_id", null: false
+    t.bigint "source_id", null: false
     t.index ["item_id", "source_id"], name: "index_items_sources_on_item_id_and_source_id"
   end
 
-  create_table "sources", force: :cascade do |t|
+  create_table "sources", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "english"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -9,3 +9,6 @@ services:
     ports:
       - "80:80"
     working_dir: /wasp
+
+  db:
+    env_file: ../secrets/wasp/mysql.prod
