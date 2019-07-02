@@ -88,13 +88,13 @@ class DataScraperJobTest < ActiveJob::TestCase
   test 'logs error if response is not 200' do
     stub_request(:get, @urls[0]).
       to_return(status: 404)
-    assert_log /Failed to gather item data/ do
+    assert_log /DataScraperJob failed/ do
       DataScraperJob.perform_now
     end
 
     stub_request(:get, @urls[0]).
       to_return(status: 500)
-    assert_log /Failed to gather item data/ do
+    assert_log /DataScraperJob failed/ do
       DataScraperJob.perform_now
     end
   end
@@ -144,5 +144,18 @@ class DataScraperJobTest < ActiveJob::TestCase
     assert_enqueued_jobs 1 do
       DataScraperJob.perform_now
     end
+  end
+
+  test 'does not run if all next_data_scrapes are in the future' do
+    @endpoints.each do |e|
+      Item.find_by(endpoint: e).update_attribute(:next_data_scrape, 5.minutes.from_now)
+    end
+    data_gets = @urls.collect.with_index do |u,i|
+      stub_request(:get, u).
+        to_return(body: @responses[i], status: 200)
+    end
+    DataScraperJob.perform_now
+    # Make sure none of the URLs were called
+    data_gets.each { |d| assert_not_requested d }
   end
 end
