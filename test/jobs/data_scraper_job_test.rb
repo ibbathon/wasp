@@ -55,7 +55,7 @@ class DataScraperJobTest < ActiveJob::TestCase
   test 'updates sonic_fracture next_data_scrape to 7 days later' do
     # First grab some initial dates for testing the reschedule
     now = DateTime.now
-    later = 7.days.from_now
+    later = 7.days.from_now - 1.second
     item = Item.find_by(endpoint: @endpoints[0])
     assert_operator item.next_data_scrape, :<, now
     # Set up the mock, execute, and grab the new item

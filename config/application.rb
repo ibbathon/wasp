@@ -22,5 +22,7 @@ module Wasp
     config.list_scraper_run_at = lambda { DateTime.tomorrow.beginning_of_day }
     # How long to wait between DataScraperJob runs
     config.data_scraper_wait_period = 2.seconds
+    # How long to wait between PriceScraperJob runs
+    config.price_scraper_wait_period = 2.seconds
   end
 end

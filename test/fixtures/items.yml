@@ -3,6 +3,7 @@
 item_no_price:
   endpoint: ember_prime_chassis
   english: Ember Prime Chassis
+  platinum: 0
   sources: used_source_3
   next_data_scrape: 2019-05-28 16:54:29
   next_price_scrape: 0000-01-01 00:00:00
@@ -19,5 +20,6 @@ item_with_price:
 unscraped_item:
   endpoint: sonic_fracture
   english: Sonic Fracture
+  platinum: 0
   next_data_scrape: 0000-01-01 00:00:00
   next_price_scrape: 0000-01-01 00:00:00

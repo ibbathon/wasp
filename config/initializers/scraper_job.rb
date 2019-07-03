@@ -4,5 +4,6 @@ Rails.application.config.after_initialize do
   if Rails.const_defined? 'Server'
     ListScraperJob.perform_later
     DataScraperJob.perform_later
+    PriceScraperJob.perform_later
   end
 end
