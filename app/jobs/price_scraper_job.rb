@@ -63,7 +63,6 @@ class PriceScraperJob < ApplicationJob
         break
       end
       # Find with order_type=buy, mod_rank=0
-      Rails.logger.info "#{@item.endpoint}"
       orders.select! { |o| o[:mod_rank].nil? || o[:mod_rank] == 0 }
       # Find latest
       latest = orders.max_by { |o| o[:datetime] }
