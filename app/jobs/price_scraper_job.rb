@@ -71,6 +71,7 @@ class PriceScraperJob < ApplicationJob
     rescue => e
       Rails.logger.error "No price found for #{@item.english}: #{e}"
       Rails.logger.debug "No price found for #{@item.english}; data==#{data}"
+      return 0
     end
   end
 end
