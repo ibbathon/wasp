@@ -70,4 +70,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 ## WaSP-specific gems
 # For making REST calls to warframe.market
-gem 'httparty', '~> 0.17.0'
+gem 'httparty', '~> 0.21.0'
